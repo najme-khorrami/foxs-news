@@ -1,0 +1,49 @@
+header{
+    nav{
+        height: 50px;
+    }
+    .nav-link{
+        padding: .5rem .75rem;
+        &:hover{
+            background-color: $secondary;
+        }
+    }
+    a{text-decoration: none;}
+    .navbar-brand{
+        img{
+            z-index: 9999;
+        }
+    }
+    .fs-7{
+        font-size: 14px;
+    }
+    .zin{
+        z-index: 999999;
+    }
+    .u-link{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .nav-buttons{
+        @include media-breakpoint-down(md){
+            transform: translateX(-120px);
+        }
+        @include media-breakpoint-down(sm){
+            transform: translate(0px);
+        }
+        > a > img{
+            transform: translate(10px , 10px);
+        }
+        > button{
+            width: 60px;
+            height: 40px;
+        }
+    }
+    .menu{
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+}

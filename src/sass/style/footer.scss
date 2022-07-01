@@ -1,0 +1,56 @@
+footer{
+    .social-icons{
+        li{
+            margin: 4px;
+            a{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: rgb(16, 16, 56);
+                transition: .3s;
+                img{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50% , -50%);
+                }
+            }
+            .facebook:hover{
+                background-color: rgb(64,100,172);
+            }
+            .twitter:hover{
+                background-color: rgb(30,155,235);
+            }
+            .instagram:hover{
+                background: linear-gradient(yellow,orange,#C13584,purple,blue);
+            }
+            .youtube:hover{
+                background-color: red;
+            }
+            .flipboard:hover{
+                background-color: rgb(224, 63, 63);
+            }
+            .linkedin:hover{
+                background-color: rgb(29, 140, 209);
+            }
+            .slack:hover{
+                background-color: purple;
+            }
+            .letter:hover{
+                background-color: gray;
+            }   
+            .spotify:hover{
+                background-color: #1DB954;
+            }           
+        }
+    }
+    .brand-img > a{
+        width: 52px;
+        height: 52px;
+        background: url(../../images/fox-news-logo.svg) 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        opacity: .25;
+    }
+}
+a{text-decoration: none;}

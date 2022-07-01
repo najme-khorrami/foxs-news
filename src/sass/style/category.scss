@@ -1,0 +1,42 @@
+main{
+    a{
+        text-decoration: none;
+    }
+    .fs-normal{
+        font-size: 18px;
+    }
+    .news-box{
+        max-height: 200px;
+        @include media-breakpoint-down(md) {
+            &{
+                span{
+                    font-size: 16px !important;
+                    padding-right: 15px;
+                }
+                a{
+                    color: #333 !important;
+                    font-size: 18px !important;
+                    padding-right: 15px ;
+                }
+            } 
+        }
+    }
+    .left-imgs{
+        cursor: pointer;
+        position: relative;
+        transform: translateX(-30px);
+        &::before{
+            content: "1";
+            width: 30px;
+            height: 100%;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: $secondary;
+            color: $primary;
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center;
+        }
+    }
+}

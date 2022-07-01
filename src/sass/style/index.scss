@@ -1,0 +1,65 @@
+main{
+    a{
+        text-decoration: none;
+    }
+    .fs-7{
+        font-size: 12px;
+    }
+    .fs-14{
+        font-size: 14px;
+    }
+    .u-link{
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .r-box{
+        width: 550px;
+    }
+    .paly-after{
+        position: relative;
+        display: block;
+    }
+    .paly-after::after{
+        width: 25px;
+        height: 25px;
+        content: "a";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: red;
+    }
+    .label{
+        background-color: rgba(0, 51, 102, 0.7);
+        cursor: pointer;
+    }
+    .divider{
+        height: 100px;
+    }
+    .label-shadow{
+        background: linear-gradient(to top,rgb(0, 0, 0),rgba(218, 217, 217, 0));
+    }
+}
+@include media-breakpoint-up(lg) {
+    body .news-box{
+        .title{
+            font-size: 22px !important;
+        }
+        .label-shadow{
+            font-size: 20px !important;
+        }
+    }
+}
+@include media-breakpoint-down(lg) {
+    main .container-xl .row{
+        .divide:nth-child(1){order: 2;}
+        .divide:nth-child(2){order: 1;}
+        .divide:nth-child(3){order: 3;}
+        .this-img{
+            width: 25%;
+            margin: 10px;
+        }
+    } 
+}

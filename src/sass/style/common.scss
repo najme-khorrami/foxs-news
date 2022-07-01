@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'vazir';
+    font-style: normal;
+    src: url('../fonts/vazir/Vazirmatn-Regular.ttf');
+}
+
+body {
+    font-family: 'vazir' !important;
+}
+
+// sticky footer
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .Site-content {
+    flex: 1;
+  }
